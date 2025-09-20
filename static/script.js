@@ -100,8 +100,5 @@ async function loadAnalytics() {
         ${(a.by_day.length ? a.by_day.map(d => `${d[0]}: ₹${d[1].toFixed(2)}`).join("<br>") : "No data")}
       </div>
     `;
-<<<<<<< HEAD
 }
-=======
-}
->>>>>>> 178ef2385fc94a0e6f200d09846a1d1e2238b006
+
