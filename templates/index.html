@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Expense Tracker</title>
+    <meta charset="UTF-8">
+    <link rel="stylesheet" href="/static/style.css">
+</head>
+<body>
+<div class="container">
+    <h1>Expense Tracker</h1>
+    <nav>
+        <button id="nav-add">Add Expense</button>
+        <button id="nav-view">Expenses</button>
+        <button id="nav-analytics">Analytics</button>
+        <button id="nav-categories">Categories</button>
+    </nav>
+    <div id="section-add" class="section">
+        <h2>Add New Expense</h2>
+        <form id="form-add">
+            <input type="number" id="amount" placeholder="Amount" min="0" step="0.01" required>
+            <select id="category"></select>
+            <input type="text" id="description" placeholder="Description" required>
+            <input type="date" id="date" required>
+            <button type="submit">Add Expense</button>
+        </form>
+    </div>
+    <div id="section-view" class="section">
+        <h2>All Expenses</h2>
+        <div id="expenses-list"></div>
+    </div>
+    <div id="section-analytics" class="section">
+        <h2>Analytics</h2>
+        <div id="analytics-content"></div>
+    </div>
+    <div id="section-categories" class="section">
+        <h2>Categories</h2>
+        <form id="form-category">
+            <input type="text" id="cat-name" placeholder="New Category" required>
+            <button type="submit">Add Category</button>
+        </form>
+        <ul id="cat-list"></ul>
+    </div>
+</div>
+<script src="/static/script.js"></script>
+</body>
+</html>
