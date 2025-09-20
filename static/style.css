@@ -1,0 +1,80 @@
+body {
+    font-family: Arial, sans-serif;
+    background: #fafbfc;
+    margin: 0;
+}
+
+.container {
+    max-width: 900px;
+    margin: 20px auto;
+    background: #fff;
+    border-radius: 10px;
+    box-shadow: 0 2px 8px #0002;
+    padding: 2rem;
+}
+
+nav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 2rem;
+}
+
+nav button {
+    padding: 8px 18px;
+    border-radius: 6px;
+    border: none;
+    background: #eee;
+}
+
+nav button.active {
+    background: #222;
+    color: #fff;
+}
+
+.section {
+    display: none;
+}
+
+h1 {
+    margin-top: 0;
+}
+
+input,
+select,
+button {
+    margin: 4px 0 12px;
+    padding: 8px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+}
+
+form {
+    display: flex;
+    gap: 10px;
+    flex-wrap: wrap;
+    align-items: center;
+}
+
+#expenses-list>div {
+    border-bottom: 1px solid #eee;
+    padding: 10px;
+}
+
+#cat-list {
+    list-style: none;
+    padding: 0;
+}
+
+#cat-list li {
+    display: flex;
+    gap: 10px;
+    align-items: center;
+}
+
+.analytics-box {
+    border: 1px solid #efefef;
+    border-radius: 8px;
+    background: #F6F8FA;
+    margin-bottom: 10px;
+    padding: 10px;
+}
